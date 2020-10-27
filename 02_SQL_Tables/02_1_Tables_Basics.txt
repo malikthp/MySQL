@@ -1,0 +1,34 @@
+// Vorbereitung;
+
+SHOW DATABASES;
+CREATE DATABASE work;
+SHOW DATABASES;
+USE work;
+
+// Tabelle in der DB anzeigen
+SHOW TABLES;
+
+// Tabelle anlegen (1)
+CREATE TABLE cats
+(
+    name VARCHAR(20),
+	age INT
+);
+
+// Tabelle löschen
+DROP TABLE cats;
+
+// Tabelle anlegen (2)
+CREATE TABLE cats(name VARCHAR(20),age INT);
+
+// Struktur der Tabelle anzeigen
+DESC cats;
+
+// Daten in Tabelle schreiben (1)
+INSERT INTO cats(name,age) VALUES ("Alonzo",35);
+
+// Daten in der Tabelle anzeigen
+SELECT * FROM cats;
+
+
+
