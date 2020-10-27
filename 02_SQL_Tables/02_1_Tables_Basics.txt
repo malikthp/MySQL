@@ -30,5 +30,38 @@ INSERT INTO cats(name,age) VALUES ("Alonzo",35);
 // Daten in der Tabelle anzeigen
 SELECT * FROM cats;
 
+// Daten in Tabelle schreiben (2)
+INSERT INTO cats(age,name) VALUES (29, "Grizabella");
 
+// Daten in Tabelle schreiben (3)
+INSERT INTO cats VALUES ("Run Tum Tugger" , 40);
 
+// Daten in Tabelle schreiben (4) LEER
+INSERT INTO cats VALUES ();
+
+// --> Leere Daten werden mit NULL dargestellt
+
+// Tabelle löschen
+DROP Table cats;
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+// Tabelle anlegen (1)
+CREATE TABLE cats
+(
+    name VARCHAR(20) NOT NULL,
+	age INT NOT NULL
+);
+
+CREATE TABLE cats
+(
+    name VARCHAR(20) NOT NULL DEFAULT "BOO",
+	age INT NOT NULL DEFAULT 0
+);
+
+INSERT INTO cats
+(name,age)
+VALUES
+("RUN Tum Tugger", 40);
+("Alonzo", 35),
+("Grizabella", 29);
